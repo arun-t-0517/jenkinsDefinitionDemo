@@ -1,0 +1,21 @@
+@Library(["jenkins-shared-library"]) _
+
+def printHelloWorld() {
+    stage('build'){
+        executeHelloWorldExample('Arun')
+    }
+
+}
+
+
+pipeline {
+    agent any
+    stages {
+        stage('init') {
+            steps {
+                printHelloWorld()
+            }
+        }
+    }
+
+}
