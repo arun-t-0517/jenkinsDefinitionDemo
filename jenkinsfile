@@ -2,7 +2,7 @@
 
 def printHelloWorld() {
     stage('build'){
-        executeHelloWorldExample('Arun')
+        HelloWorldExample('Arun')
     }
 
 }
